@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 export default function CraftsmanshipPage() {
   return (
@@ -7,7 +7,9 @@ export default function CraftsmanshipPage() {
         {/* Hero */}
         <div className="overflow-hidden rounded-3xl border bg-card">
           <div className="relative h-[320px] w-full">
-            <img
+            <Image
+              width={600}
+              height={500}
               src="/images/gem-appraisal.jpg"
               alt="Bench jeweler crafting a ring"
               className="absolute inset-0 size-full object-cover"
@@ -41,7 +43,9 @@ export default function CraftsmanshipPage() {
                 lasting beauty and integrity.
               </p>
             </div>
-            <img
+            <Image
+              width={600}
+              height={500}
               className="h-72 w-full rounded-2xl border object-cover"
               src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0"
               alt="Crafting process"
@@ -52,7 +56,9 @@ export default function CraftsmanshipPage() {
             id="repairs"
             className="grid items-start gap-8 lg:grid-cols-2"
           >
-            <img
+            <Image
+              width={600}
+              height={500}
               className="order-last h-72 w-full rounded-2xl border object-cover lg:order-first"
               src="/images/repair-restoration.jpg"
               alt="Repair and restoration"
@@ -82,7 +88,9 @@ export default function CraftsmanshipPage() {
                 prepared by GIA‑trained gemologists.
               </p>
             </div>
-            <img
+            <Image
+              width={600}
+              height={500}
               className="h-72 w-full rounded-2xl border object-cover"
               src="/images/gem-appraisal.webp"
               alt="Gem appraisal"

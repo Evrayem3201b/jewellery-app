@@ -1,5 +1,6 @@
 import React from "react";
 import { ComprehensiveContactForm } from "@/components/contact/comprehensive-contact-form";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
@@ -7,7 +8,9 @@ export default function ContactPage() {
       <div className="container max-w-6xl">
         <div className="overflow-hidden rounded-3xl border bg-card">
           <div className="relative h-[260px] w-full">
-            <img
+            <Image
+              width={600}
+              height={500}
               src="https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0"
               alt="Atelier interior"
               className="absolute inset-0 size-full object-cover"

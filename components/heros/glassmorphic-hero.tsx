@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const GlassmorphicHero = () => {
   return (
@@ -48,10 +49,12 @@ const GlassmorphicHero = () => {
           </div>
           <div className="relative mt-28">
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent rounded-tr-4xl rounded-tl-4xl z-10" />
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.1.0"
               alt="Luxury jewelry collection showcase"
               className="mx-auto max-h-[700px] w-full max-w-7xl rounded-tr-4xl rounded-tl-4xl object-cover ring-1 ring-muted/20 transition-transform duration-500 hover:scale-[1.02]"
+              width={700}
+              height={500}
             />
           </div>
         </div>
