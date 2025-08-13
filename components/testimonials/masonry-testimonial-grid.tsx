@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 interface DataItem {
   name: string;
@@ -86,7 +87,7 @@ const RewardCard = ({ icon, title, subtitle }: RewardCardProps) => (
   <div className="bg-muted flex flex-col gap-2 rounded-xl p-2 px-4 shadow-sm">
     <div className="flex flex-row items-center gap-2">
       <div className="bg-background rounded-full p-2">
-        <img
+        <Image
           src={icon}
           alt={title}
           width={40}
@@ -113,7 +114,7 @@ const MasonryTestimonialGrid = () => {
           </h2>
           <p className="text-center text-lg font-[var(--font-body)] text-muted-foreground max-w-2xl">
             Stories of joy, love, and celebration from those who trust us with
-            life's most precious moments
+            life&apos;s most precious moments
           </p>
         </div>
 
